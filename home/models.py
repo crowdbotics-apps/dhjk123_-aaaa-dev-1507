@@ -31,3 +31,8 @@ class HomePage(models.Model):
     @property
     def field(self):
         return "body"
+
+
+class Dummy(models.Model):
+    "Generated Model"
+    dummy = models.GenericIPAddressField(protocol="IPv4", unpack_ipv4=False,)
